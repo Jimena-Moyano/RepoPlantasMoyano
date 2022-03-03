@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
 
 * {
     margin: 0;
@@ -10,49 +12,58 @@ body {
     background-image: url("../img/066938f633a1394737d55392df4196e4.jpg")
     }
 
-/************** HEADER *************/
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 150px;
-    background-color: rgb(154, 159, 126);
-}
-
 /************* NAV ****************/
 
-.logo {
-    text-decoration: none;
+.navbar.navbar-expand-lg.navbar-light {
+    height: 150px;
+    background-color: #9a9f7e;
+    z-index: 300;
+
+}
+
+.navbar-light .navbar-brand {
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Josefin Sans', sans-serif;
-    margin-left: 18px;
+    margin-left: 15px;
 }
 
-
-.MenuHeader ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.navbar-light .navbar-brand:hover{
+    color: white;
 }
 
-.MenuHeader ul li {
-    list-style-type: none;
+#navbarNav ul {
+    margin-right: 25px;
+}
+
+#navbarNav ul li {
     margin: 0 25px;
 }
 
-.MenuHeader ul li a {
-    text-decoration: none;
+#navbarNav ul li a {
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
-.MenuHeader ul li a:hover{
+
+#navbarNav ul li a:hover{
     color: black;
 }
+
+.navbar-collapse {
+    background-color: #9a9f7e;
+    flex-grow: unset;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.navbar-toggler {
+    margin: 20px;
+}
+
+
 
 /************** SECTION ***************/
 
@@ -62,7 +73,8 @@ header {
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
     "imagen imagen texto"
-    "video1 video2 video3"
+    "video1 video2 video3";
+    overflow: hidden;
 }
 
 
@@ -77,7 +89,7 @@ header {
 
 .estiloImagen img {
     width: 100%;
-    filter: brightness(35%);
+    filter: brightness(85%);
 }
 
 /****** ¿PORQUE ES BENEFICOSO TENER PLANTAS *******/
@@ -89,7 +101,7 @@ header {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     background-color: #fff9ed;
-    filter: brightness(35%);
+    filter: brightness(85%);
     
 }
 
@@ -97,10 +109,11 @@ header {
     font-size: 20px;
     padding: 50px;
     transform: translate(-10px);
+    font-weight: bold;
 }
 
 .estiloTexto p{
-    font-size: 14px;
+    font-size: 15px;
     padding: 50px;
     transform: translate(-10px);
 }
@@ -145,7 +158,8 @@ iframe {
     font-size: 18px;
     justify-content: center;
     align-items: center;
-    margin-top: 50px
+    margin-top: 50px;
+    font-weight:600;
 }
 
 .TextoDeIframe:hover{
@@ -156,15 +170,39 @@ iframe {
 
 footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: 100px;
     background-color: rgb(207, 198, 178);
 
 }
 
-.RrssFooter {
-    height: 50px;
+.bi {
+    font-size: 35px;
+}
+
+.bi-facebook {
+    color: #9a9f7e;
+}
+
+.bi-facebook:hover{
+    color: #3b5998;
+}
+
+.bi-instagram {
+    color: #9a9f7e;
+}
+
+.bi-instagram:hover {
+    color: #E1306C;
+}
+
+.bi-tiktok {
+    color: #9a9f7e;
+}
+
+.bi-tiktok:hover {
+    color: black;
 }
 
 footer p {
@@ -198,58 +236,50 @@ footer p:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
-    "venta1 venta2 venta3"
-    "venta4 venta5 venta6"
+    "card1 card2 card3"
+    "card4 card5 card6"
 }
 
-.venta1 {
-    grid-area: venta1;
+.card1 {
+    grid-area: card1;
 }
 
-.venta2 {
-    grid-area: venta2;
+.card2 {
+    grid-area: card2;
 }
 
-.venta3 {
-    grid-area: venta3;
+.card3 {
+    grid-area: card3;
 }
 
-.venta4 {
-    grid-area: venta4;
+.card4 {
+    grid-area: card4;
 }
 
-.venta5 {
-    grid-area: venta5;
+.cardecard5 {
+    grid-area: card5;
 }
 
-.venta6 {
-    grid-area: venta6;
+.card6 {
+    grid-area: card6;
 }
 
-.estiloVentas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.card {
+    background-color: rgba(255, 255, 255, 0.795);
+    border-radius: 8px;
     align-items: center;
-    margin-bottom: 90px;
+    margin: 30px;
+    justify-self: center;
 }
 
-.Tamaño-Img-Tienda {
-    width: 200px;
-    border-radius: 15px;
-    margin: 25px;
-}
-
-.Tamaño-Img-Tienda:hover {
+.card:hover {
     transform: scale(1.1);
 }
 
-.Parrafos-Alineados{
-    display: flex;
+.card-text {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
 }
-
 
 /*********PLANTAS DE EXTERIOR y INTERIOR *********/
 
@@ -260,7 +290,8 @@ footer p:hover {
     "tituloh tituloh"
     "foto1 descripcion1"
     "descripcion2 foto2"
-    "foto3 descripcion3"
+    "foto3 descripcion3";
+    overflow: hidden;
 }
 
 .tituloh {
@@ -330,9 +361,10 @@ footer p:hover {
 section h2 {
     display: flex;
     font-family: 'Poppins', sans-serif;
-    font-size: 38px;
+    font-size: 40px;
     justify-content: center;
     margin: 20px;
+    font-weight: 500;
 }
 
 
@@ -347,36 +379,44 @@ section h2 {
     flex-direction: column;
     background-color:  rgba(102, 83, 83, 0.205);
     border-radius: 20px;
-    width: 600px;
-    height: 350px;
+    padding: 40px;
+    width: 50%;
+    height: 50%;
 }
 
-.Formulario {
-    display: flex;
-    margin: 20px;
-    padding: 5px;
-    border: 1px solid rgb(207, 198, 178);
-    border-radius: 7px;
-    outline: none;
-    height: 28px;
+.form-control {
+    width: 90%;
+    margin: auto;
+    border: 1px solid #9a9f7e;
 }
 
-.FormularioBoton {
+.form-check .form-check-input {
+    margin-left: 1rem;
+}
+
+.form-check-label {
+    padding-left: 9px;
+}
+
+.btn-success {
     font-size: 14px;
+    color: black;
     margin: 20px;
     padding: 5px;
     font-family: 'Poppins', sans-serif;
-    width: 300px;
+    width: 400px;
     align-self: center;
-    background-color: rgba(224, 200, 224, 0.856);
-    border: 1px solid rgba(82, 82, 82, 0.753);
+    background-color: rgba(199, 178, 199, 0.856);
+    border: 1px solid rgba(172, 153, 172, 0.979);
     border-radius: 7px;
     box-shadow: 1px 1px 1px rgb(112, 112, 112);
 }
 
-.FormularioBoton:hover{
+.btn-success:hover{
     transform: scale(1.1);
-    background-color: rgb(154, 159, 126);
+    color: black;
+    border: 1px solid #9a9f7e;
+    background-color: rgb(134, 138, 113);
 }
 
 /******************* MEDIA QUERIES *******************/
@@ -385,19 +425,12 @@ section h2 {
 
     .GrillaPlantas {
         grid-template-columns: 50% 50%;
-        grid-template-rows: 300px 200px 250px 250px;
+        grid-template-rows: 400px 1fr 1fr 1fr;
         grid-template-areas: 
         "imagen imagen"
         "texto texto"
         "video1 video2"
         "video3 video3"
-    }
-
-    header {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 250px;
     }
 
     footer {
@@ -430,14 +463,18 @@ section h2 {
     .GrillaTienda {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
-        "venta1 venta2"
-        "venta3 venta4" 
-        "venta5 venta6"
+        "card1 card2"
+        "card3 card4" 
+        "card5 card6"
     }
 
     .estiloAnuncio {
-        height: 230px;
-        margin: 30px 0px 30px 0px;
+        align-items: center;
+    }
+
+    .estiloAnuncio img {
+        width: 50%;
+        margin: 30px;
     }
 
     section h2 {
@@ -449,6 +486,10 @@ section h2 {
     .Estilo-Formulario{
         width: 50%;
     }
+
+    .btn-success {
+        width: 60%
+    }
 }
 
 
@@ -457,7 +498,7 @@ section h2 {
 
     .GrillaPlantas {
         grid-template-columns: 100%;
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: 300px 1fr 1fr 1fr 1fr;
         grid-template-areas: 
         "imagen"
         "texto"
@@ -466,27 +507,25 @@ section h2 {
         "video3"
     }
 
-
-.MenuHeader ul {
-    flex-direction: column;
-}
-
-
 .GrillaTienda {
     grid-template-columns: 100%;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: 
-    "venta1"
-    "venta2" 
-    "venta3"
-    "venta4" 
-    "venta5"
-    "venta6"
+    "card1"
+    "card2" 
+    "card3"
+    "card4" 
+    "card5"
+    "card6"
     }
 
 
 .Estilo-Formulario{
     width: 100%;
+    }
+
+    .estiloAnuncio {
+        flex-direction: column;
     }
 }
 
