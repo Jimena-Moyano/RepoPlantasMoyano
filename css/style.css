@@ -6,19 +6,18 @@
     padding: 0;
 }
 
-/***** FONDO DE TODO EL INICIO *****/
+/*************** FONDO DE TODO ****************/
 
 body {
     background-image: url("../img/066938f633a1394737d55392df4196e4.jpg")
     }
 
-/************* NAV ****************/
+/********************* NAV ***************************/
 
 .navbar.navbar-expand-lg.navbar-light {
     height: 150px;
     background-color: #9a9f7e;
     z-index: 300;
-
 }
 
 .navbar-light .navbar-brand {
@@ -63,8 +62,6 @@ body {
     margin: 20px;
 }
 
-
-
 /************** SECTION ***************/
 
 .GrillaPlantas {
@@ -78,7 +75,7 @@ body {
 }
 
 
-/****** IMAGEN PLANTA INICIO *******/
+/**************** IMAGEN PLANTA INICIO ***************/
 .imagen{
     grid-area: imagen;
 }
@@ -101,28 +98,28 @@ body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     background-color: #fff9ed;
-    filter: brightness(85%);
-    
+    filter: brightness(85%);   
 }
 
 .estiloTexto h2{
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 50px;
     transform: translate(-10px);
     font-weight: bold;
 }
 
 .estiloTexto p{
-    font-size: 15px;
+    font-size: 0.93rem;
     padding: 50px;
     transform: translate(-10px);
 }
 
-/****** VIDEOS *******/
+/************** VIDEOS ***************/
 
 .video1 {
     grid-area: video1;
 }
+
 .videoInicio {
     display: flex;
     flex-direction: column;
@@ -146,7 +143,6 @@ iframe {
     grid-area: video3;
 }
 
-
 .estiloVideo {
     width: 300px;
     height: 200px;
@@ -155,14 +151,14 @@ iframe {
 .TextoDeIframe {
     display: flex;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 1.12rem;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
     font-weight:600;
 }
 
-.TextoDeIframe:hover{
+.TextoDeIframe:hover {
     transform: scale(1.1);
 }
 
@@ -174,7 +170,6 @@ footer {
     align-items: center;
     height: 100px;
     background-color: rgb(207, 198, 178);
-
 }
 
 .bi {
@@ -206,7 +201,7 @@ footer {
 }
 
 footer p {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -215,7 +210,7 @@ footer p:hover {
 }
 
 
-/********* TIENDA *******/
+/************** TIENDA **************/
 
 
 .estiloAnuncio {
@@ -256,7 +251,7 @@ footer p:hover {
     grid-area: card4;
 }
 
-.cardecard5 {
+.card5 {
     grid-area: card5;
 }
 
@@ -265,7 +260,7 @@ footer p:hover {
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.795);
+    background-color: rgba(243, 232, 232, 0.795);
     border-radius: 8px;
     align-items: center;
     margin: 30px;
@@ -278,7 +273,7 @@ footer p:hover {
 
 .card-text {
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 /*********PLANTAS DE EXTERIOR y INTERIOR *********/
@@ -324,7 +319,7 @@ footer p:hover {
 
 .tituloh.TituloPlantaInterior {
     font-family: 'Poppins', sans-serif;
-    font-size: 38px;
+    font-size: 2.37rem;
     margin: 20px;
     text-align: center;
 }
@@ -352,18 +347,26 @@ footer p:hover {
     align-items: center;
 }
 
-.paddingDerecha{
+.padding-Derecha{
     padding: 37px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.94rem;
 }
 
-/***********FORMULARIO*************/
+
+.padding-Izquierda {
+    padding-right: 37px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.94rem;
+}
+/****************FORMULARIO*****************/
 
 section h2 {
     display: flex;
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     justify-content: center;
-    margin: 20px;
+    margin: 1.25rem;
     font-weight: 500;
 }
 
@@ -412,7 +415,7 @@ section h2 {
     box-shadow: 1px 1px 1px rgb(112, 112, 112);
 }
 
-.btn-success:hover{
+.btn-success:hover {
     transform: scale(1.1);
     color: black;
     border: 1px solid #9a9f7e;
@@ -470,6 +473,7 @@ section h2 {
 
     .estiloAnuncio {
         align-items: center;
+        flex-direction: column;
     }
 
     .estiloAnuncio img {
@@ -478,7 +482,7 @@ section h2 {
     }
 
     section h2 {
-        font-size: 22px;
+        font-size: 1.37rem;
         justify-content: center;
         margin: 15px;
     }
@@ -507,21 +511,21 @@ section h2 {
         "video3"
     }
 
-.GrillaTienda {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: 
-    "card1"
-    "card2" 
-    "card3"
-    "card4" 
-    "card5"
-    "card6"
+    .GrillaTienda {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "card1"
+        "card2" 
+        "card3"
+        "card4" 
+        "card5"
+        "card6"
     }
 
 
-.Estilo-Formulario{
-    width: 100%;
+    .Estilo-Formulario{
+        width: 100%;
     }
 
     .estiloAnuncio {
