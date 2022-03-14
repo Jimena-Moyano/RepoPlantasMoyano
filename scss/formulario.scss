@@ -1,0 +1,60 @@
+/****************FORMULARIO*****************/
+section h2 {
+    display: flex;
+    font-family: $fontParrafos;
+    font-size: 2.5rem;
+    justify-content: center;
+    margin: 1.25rem;
+    font-weight: 500;
+}
+
+.ContenedorForm {
+    display: flex;
+   justify-content: center;
+   margin: 2rem 0;
+
+   & .Estilo-Formulario {
+    display: flex;
+    flex-direction: column;
+    background-color:  rgba(102, 83, 83, 0.205);
+    border-radius: 20px;
+    padding: 40px;
+    width: 50%;
+    height: 50%;
+    }
+}
+
+.form-control {
+    width: 90%;
+    margin: auto;
+    border: 1px solid $navColor;
+}
+
+.form-check .form-check-input {
+    margin-left: 1rem;
+
+    & label {
+        padding-left: 9px;
+    }
+}
+
+.btn-success {
+    font-size: 14px;
+    color: black;
+    margin: 20px;
+    padding: 5px;
+    font-family: $fontParrafos;
+    width: 400px;
+    align-self: center;
+    background-color: rgba(199, 178, 199, 0.856);
+    border: 1px solid rgba(172, 153, 172, 0.979);
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px rgb(112, 112, 112);
+
+    &:hover {
+        transform: scale(1.1);
+        color: black;
+        border: 1px solid $navColor;
+        background-color: rgb(134, 138, 113);
+    }
+}

@@ -1,0 +1,39 @@
+/************** TIENDA **************/
+
+.estiloAnuncio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px 0px 90px 0px;
+
+    & img {
+        width: 25%;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px rgba(139, 139, 139, 0.87);
+    }
+}
+
+.card {
+    background-color: rgba(243, 232, 232, 0.795);
+    border-radius: 8px;
+    align-items: center;
+    margin: 30px;
+    justify-self: center;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.card-text {
+    font-family: $fontParrafos;
+    font-size: 0.875rem;
+    
+    &:hover::after {
+        display: block;
+        text-align: center;
+        content: "250ARS";
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}

@@ -1,535 +1,362 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
-
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/*************** FONDO DE TODO ****************/
-
-body {
-    background-image: url("../img/066938f633a1394737d55392df4196e4.jpg")
-    }
-
-/********************* NAV ***************************/
-
-.navbar.navbar-expand-lg.navbar-light {
-    height: 150px;
-    background-color: #9a9f7e;
-    z-index: 300;
-}
-
-.navbar-light .navbar-brand {
-    color: white;
-    font-size: 40px;
-    font-family: 'Josefin Sans', sans-serif;
-    margin-left: 15px;
-}
-
-.navbar-light .navbar-brand:hover{
-    color: white;
-}
-
-#navbarNav ul {
-    margin-right: 25px;
-}
-
-#navbarNav ul li {
-    margin: 0 25px;
-}
-
-#navbarNav ul li a {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-#navbarNav ul li a:hover{
-    color: black;
-}
-
-.navbar-collapse {
-    background-color: #9a9f7e;
-    flex-grow: unset;
-}
-
-.container-fluid {
-    padding: 0;
-}
-
-.navbar-toggler {
-    margin: 20px;
-}
-
-/************** SECTION ***************/
-
-.GrillaPlantas {
-    display: grid;
-    grid-template-columns: 40% 20% 40%;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "imagen imagen texto"
-    "video1 video2 video3";
-    overflow: hidden;
-}
-
-
+@charset "UTF-8";
+/****COLORES****/
 /**************** IMAGEN PLANTA INICIO ***************/
-.imagen{
-    grid-area: imagen;
-}
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 .estiloImagen {
-    display: flex;
-}
-
-.estiloImagen img {
+  display: flex; }
+  .estiloImagen img {
     width: 100%;
-    filter: brightness(85%);
-}
+    filter: brightness(85%); }
 
 /****** ¿PORQUE ES BENEFICOSO TENER PLANTAS *******/
-.texto{
-    grid-area: texto;
-}
-
-.estiloTexto{
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    background-color: #fff9ed;
-    filter: brightness(85%);   
-}
-
-.estiloTexto h2{
+.estiloTexto {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background-color: #fff9ed;
+  filter: brightness(85%); }
+  .estiloTexto h2 {
     font-size: 1.25rem;
     padding: 50px;
     transform: translate(-10px);
-    font-weight: bold;
-}
-
-.estiloTexto p{
+    font-weight: bold; }
+  .estiloTexto p {
     font-size: 0.93rem;
     padding: 50px;
-    transform: translate(-10px);
-}
+    transform: translate(-10px); }
 
 /************** VIDEOS ***************/
-
-.video1 {
-    grid-area: video1;
-}
-
 .videoInicio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 iframe {
-    margin: 25px 0px 25px 0px;
-}
+  margin: 25px 0px 25px 0px; }
 
 .estiloVideo.insumos {
-    margin: 25px 0px 25px 0px;
-}
-
-.video2 {
-    grid-area: video2;
-}
-
-.video3 {
-    grid-area: video3;
-}
+  margin: 25px 0px 25px 0px; }
 
 .estiloVideo {
-    width: 300px;
-    height: 200px;
-}
+  width: 300px;
+  height: 200px; }
 
 .TextoDeIframe {
-    display: flex;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.12rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    font-weight:600;
-}
-
-.TextoDeIframe:hover {
-    transform: scale(1.1);
-}
-
-/****** FOOTER ******/
-
-footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100px;
-    background-color: rgb(207, 198, 178);
-}
-
-.bi {
-    font-size: 35px;
-}
-
-.bi-facebook {
-    color: #9a9f7e;
-}
-
-.bi-facebook:hover{
-    color: #3b5998;
-}
-
-.bi-instagram {
-    color: #9a9f7e;
-}
-
-.bi-instagram:hover {
-    color: #E1306C;
-}
-
-.bi-tiktok {
-    color: #9a9f7e;
-}
-
-.bi-tiktok:hover {
-    color: black;
-}
-
-footer p {
-    font-size: 0.875rem;
-    font-family: 'Poppins', sans-serif;
-}
-
-footer p:hover {
-    color:  rgb(87, 90, 70);;
-}
-
-
-/************** TIENDA **************/
-
-
-.estiloAnuncio {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 50px 0px 90px 0px;
-}
-
-.estiloAnuncio img {
-    width: 25%;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px rgba(139, 139, 139, 0.87);
-}
-
-
-.GrillaTienda {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "card1 card2 card3"
-    "card4 card5 card6"
-}
-
-.card1 {
-    grid-area: card1;
-}
-
-.card2 {
-    grid-area: card2;
-}
-
-.card3 {
-    grid-area: card3;
-}
-
-.card4 {
-    grid-area: card4;
-}
-
-.card5 {
-    grid-area: card5;
-}
-
-.card6 {
-    grid-area: card6;
-}
-
-.card {
-    background-color: rgba(243, 232, 232, 0.795);
-    border-radius: 8px;
-    align-items: center;
-    margin: 30px;
-    justify-self: center;
-}
-
-.card:hover {
-    transform: scale(1.1);
-}
-
-.card-text {
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.875rem;
-}
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.12rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-weight: 600; }
+  .TextoDeIframe:hover {
+    transform: scale(1.1); }
 
 /*********PLANTAS DE EXTERIOR y INTERIOR *********/
-
-.GrillaExterior {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "tituloh tituloh"
-    "foto1 descripcion1"
-    "descripcion2 foto2"
-    "foto3 descripcion3";
-    overflow: hidden;
-}
-
-.tituloh {
-    grid-area: tituloh;
-}
-
-.foto1 {
-    grid-area: foto1;
-}
-
-.descripcion1 {
-    grid-area: descripcion1;
-}
-
-.foto2 {
-    grid-area: foto2;
-}
-
-.descripcion2 {
-    grid-area: descripcion2;
-}
-
-.foto3 {
-    grid-area: foto3;
-}
-
-.descripcion3 {
-    grid-area: descripcion3;
-}
-
 .tituloh.TituloPlantaInterior {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.37rem;
-    margin: 20px;
-    text-align: center;
-}
-
-.TamañoImagenes {
-    width: 300px;
-    border-radius: 20px;
-    box-shadow: 3px 3px 5px rgb(112, 112, 112);
-}
-
-.TamañoImagenes:hover {
-    transform: scale(1.1);
-}
+  font-family: "Poppins", sans-serif;
+  font-size: 2.37rem;
+  margin: 20px;
+  text-align: center; }
 
 .fotosExIn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px; }
+  .fotosExIn .TamañoImagenes {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px #707070; }
+    .fotosExIn .TamañoImagenes:hover {
+      transform: scale(1.1); }
 
 .DescripcionExIn {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.padding-Derecha{
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .DescripcionExIn .padding-Derecha {
     padding: 37px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.94rem;
-}
-
-
-.padding-Izquierda {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.94rem; }
+  .DescripcionExIn .padding-Izquierda {
     padding-right: 37px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.94rem;
-}
+    font-family: "Poppins", sans-serif;
+    font-size: 0.94rem; }
+
+/************** TIENDA **************/
+.estiloAnuncio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 50px 0px 90px 0px; }
+  .estiloAnuncio img {
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(139, 139, 139, 0.87); }
+
+.card {
+  background-color: rgba(243, 232, 232, 0.795);
+  border-radius: 8px;
+  align-items: center;
+  margin: 30px;
+  justify-self: center; }
+  .card:hover {
+    transform: scale(1.1); }
+
+.card-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem; }
+  .card-text:hover::after {
+    display: block;
+    text-align: center;
+    content: "250ARS";
+    font-size: 1rem;
+    font-weight: 700; }
+
 /****************FORMULARIO*****************/
-
 section h2 {
-    display: flex;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5rem;
-    justify-content: center;
-    margin: 1.25rem;
-    font-weight: 500;
-}
-
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  justify-content: center;
+  margin: 1.25rem;
+  font-weight: 500; }
 
 .ContenedorForm {
-    display: flex;
-   justify-content: center;
-   margin: 2rem 0;
-}
-
-.Estilo-Formulario {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0; }
+  .ContenedorForm .Estilo-Formulario {
     display: flex;
     flex-direction: column;
-    background-color:  rgba(102, 83, 83, 0.205);
+    background-color: rgba(102, 83, 83, 0.205);
     border-radius: 20px;
     padding: 40px;
     width: 50%;
-    height: 50%;
-}
+    height: 50%; }
 
 .form-control {
-    width: 90%;
-    margin: auto;
-    border: 1px solid #9a9f7e;
-}
+  width: 90%;
+  margin: auto;
+  border: 1px solid #9a9f7e; }
 
 .form-check .form-check-input {
-    margin-left: 1rem;
-}
-
-.form-check-label {
-    padding-left: 9px;
-}
+  margin-left: 1rem; }
+  .form-check .form-check-input label {
+    padding-left: 9px; }
 
 .btn-success {
-    font-size: 14px;
-    color: black;
-    margin: 20px;
-    padding: 5px;
-    font-family: 'Poppins', sans-serif;
-    width: 400px;
-    align-self: center;
-    background-color: rgba(199, 178, 199, 0.856);
-    border: 1px solid rgba(172, 153, 172, 0.979);
-    border-radius: 7px;
-    box-shadow: 1px 1px 1px rgb(112, 112, 112);
-}
-
-.btn-success:hover {
+  font-size: 14px;
+  color: black;
+  margin: 20px;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  width: 400px;
+  align-self: center;
+  background-color: rgba(199, 178, 199, 0.856);
+  border: 1px solid rgba(172, 153, 172, 0.979);
+  border-radius: 7px;
+  box-shadow: 1px 1px 1px #707070; }
+  .btn-success:hover {
     transform: scale(1.1);
     color: black;
     border: 1px solid #9a9f7e;
-    background-color: rgb(134, 138, 113);
-}
+    background-color: #868a71; }
+
+/****** FOOTER ******/
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  background-color: #cfc6b2; }
+  footer p {
+    font-size: 0.875rem;
+    font-family: "Poppins", sans-serif; }
+  footer p:hover {
+    color: #575a46; }
+
+.bi {
+  font-size: 35px; }
+  .bi-facebook {
+    color: #9a9f7e; }
+  .bi-facebook:hover {
+    color: #3b5998; }
+  .bi-instagram {
+    color: #9a9f7e; }
+  .bi-instagram:hover {
+    color: #E1306C; }
+  .bi-tiktok {
+    color: #9a9f7e; }
+  .bi-tiktok:hover {
+    color: black; }
 
 /******************* MEDIA QUERIES *******************/
-
 @media screen and (max-width: 768px) {
-
-    .GrillaPlantas {
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 400px 1fr 1fr 1fr;
-        grid-template-areas: 
-        "imagen imagen"
-        "texto texto"
-        "video1 video2"
-        "video3 video3"
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 300px;
-    }
-
-    .GrillaExterior {
-        grid-template-columns: 100%;
-        grid-template-areas: 
-        "tituloh"
-        "foto1"
-        "descripcion1"
-        "foto2"
-        "descripcion2"
-        "foto3"
-        "descripcion3"
-    }
-
-    .DescripcionExIn {
-        margin: 25px;
-        justify-content: center;
-        align-items: center;
-        transform: none;
-}
-
-    .GrillaTienda {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "card1 card2"
-        "card3 card4" 
-        "card5 card6"
-    }
-
-    .estiloAnuncio {
-        align-items: center;
-        flex-direction: column;
-    }
-
+  .GrillaPlantas {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 1fr 1fr 1fr;
+    grid-template-areas: "imagen imagen" "texto texto" "video1 video2" "video3 video3"; }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px; }
+  .GrillaExterior {
+    grid-template-columns: 100%;
+    grid-template-areas: "tituloh" "foto1" "descripcion1" "foto2" "descripcion2" "foto3" "descripcion3"; }
+  .DescripcionExIn {
+    margin: 25px;
+    justify-content: center;
+    align-items: center;
+    transform: none; }
+  .GrillaTienda {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "card1 card2" "card3 card4"  "card5 card6"; }
+  .estiloAnuncio {
+    align-items: center;
+    flex-direction: column; }
     .estiloAnuncio img {
-        width: 50%;
-        margin: 30px;
-    }
-
-    section h2 {
-        font-size: 1.37rem;
-        justify-content: center;
-        margin: 15px;
-    }
-
-    .Estilo-Formulario{
-        width: 50%;
-    }
-
-    .btn-success {
-        width: 60%
-    }
-}
-
-
+      width: 50%;
+      margin: 30px; }
+  section h2 {
+    font-size: 1.37rem;
+    justify-content: center;
+    margin: 15px; }
+  .Estilo-Formulario {
+    width: 50%; }
+  .btn-success {
+    width: 60%; } }
 
 @media screen and (max-width: 600px) {
+  .GrillaPlantas {
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 1fr 1fr 1fr 1fr;
+    grid-template-areas: "imagen" "texto" "video1"  "video2" "video3"; }
+  .GrillaTienda {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "card1" "card2"  "card3" "card4"  "card5" "card6"; }
+  .Estilo-Formulario {
+    width: 100%; }
+  .estiloAnuncio {
+    flex-direction: column; } }
 
-    .GrillaPlantas {
-        grid-template-columns: 100%;
-        grid-template-rows: 300px 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "imagen"
-        "texto"
-        "video1" 
-        "video2"
-        "video3"
-    }
+* {
+  margin: 0;
+  padding: 0; }
 
-    .GrillaTienda {
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: 
-        "card1"
-        "card2" 
-        "card3"
-        "card4" 
-        "card5"
-        "card6"
-    }
+/*************** FONDO DE TODO ****************/
+body {
+  background-image: url("../img/066938f633a1394737d55392df4196e4.jpg"); }
 
+/********************* NAV ***************************/
+.navbar.navbar-expand-lg.navbar-light {
+  height: 150px;
+  background-color: #9a9f7e;
+  z-index: 300; }
 
-    .Estilo-Formulario{
-        width: 100%;
-    }
+.navbar-light .navbar-brand {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-left: 15px; }
+  .navbar-light .navbar-brand:hover {
+    color: #ffffff; }
 
-    .estiloAnuncio {
-        flex-direction: column;
-    }
-}
+#navbarNav ul {
+  margin-right: 25px; }
+  #navbarNav ul li {
+    margin: 0 25px; }
+    #navbarNav ul li a {
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif; }
+      #navbarNav ul li a:hover {
+        color: black; }
 
+.navbar-collapse {
+  background-color: #9a9f7e;
+  flex-grow: unset; }
+
+.container-fluid {
+  padding: 0; }
+
+.navbar-toggler {
+  margin: 20px; }
+
+/************** GRILLA SECTION INICIO ***************/
+.GrillaPlantas {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "imagen imagen texto" "video1 video2 video3";
+  overflow: hidden; }
+
+.imagen {
+  grid-area: imagen; }
+
+.texto {
+  grid-area: texto; }
+
+.video1 {
+  grid-area: video1; }
+
+.video2 {
+  grid-area: video2; }
+
+.video3 {
+  grid-area: video3; }
+
+/********* GRILLA PLANTAS DE EXTERIOR y INTERIOR *********/
+.GrillaExterior {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "tituloh tituloh" "foto1 descripcion1" "descripcion2 foto2" "foto3 descripcion3";
+  overflow: hidden; }
+
+.tituloh {
+  grid-area: tituloh; }
+
+.foto1 {
+  grid-area: foto1; }
+
+.descripcion1 {
+  grid-area: descripcion1; }
+
+.foto2 {
+  grid-area: foto2; }
+
+.descripcion2 {
+  grid-area: descripcion2; }
+
+.foto3 {
+  grid-area: foto3; }
+
+.descripcion3 {
+  grid-area: descripcion3; }
+
+/************GRILLA TIENDA**************/
+.GrillaTienda {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "card1 card2 card3" "card4 card5 card6"; }
+
+.card1 {
+  grid-area: card1; }
+
+.card2 {
+  grid-area: card2; }
+
+.card3 {
+  grid-area: card3; }
+
+.card4 {
+  grid-area: card4; }
+
+.card5 {
+  grid-area: card5; }
+
+.card6 {
+  grid-area: card6; }

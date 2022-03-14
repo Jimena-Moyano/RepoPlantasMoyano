@@ -1,0 +1,42 @@
+/*********PLANTAS DE EXTERIOR y INTERIOR *********/
+.tituloh.TituloPlantaInterior {
+    font-family: $fontParrafos;
+    font-size: 2.37rem;
+    margin: 20px;
+    text-align: center;
+}
+
+.fotosExIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+
+    & .TamañoImagenes {
+        width: 300px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 5px rgb(112, 112, 112);
+    
+        &:hover  {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.DescripcionExIn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & .padding-Derecha {
+        padding: 37px;
+        font-family: $fontParrafos;
+        font-size: 0.94rem;
+    }
+
+    & .padding-Izquierda {
+        padding-right: 37px;
+        font-family: $fontParrafos;
+        font-size: 0.94rem;
+    }
+}

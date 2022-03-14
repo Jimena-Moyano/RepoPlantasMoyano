@@ -1,0 +1,45 @@
+/****** FOOTER ******/
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(207, 198, 178);
+
+    & p {
+        font-size: 0.875rem;
+        font-family: $fontParrafos;
+    }
+
+    & p:hover {
+        color:  rgb(87, 90, 70);;
+    }
+}
+
+.bi {
+    font-size: 35px;
+
+    &-facebook {
+        color: $navColor;
+    }
+
+    &-facebook:hover{
+        color: #3b5998;
+    }
+
+    &-instagram {
+        color: $navColor;
+    }
+
+    &-instagram:hover {
+        color: #E1306C;
+    }
+
+    &-tiktok {
+        color: $navColor;
+    }
+
+    &-tiktok:hover {
+        color: black;
+    }
+}
