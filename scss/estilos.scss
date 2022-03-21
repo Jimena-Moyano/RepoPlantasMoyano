@@ -1,175 +1,117 @@
 @import "./variables";
+@import "./navegacionGeneral";
 @import "./_inicio.scss";
 @import "./_interiorExterior.scss";
 @import "./_tienda.scss";
 @import "./_formulario.scss";
 @import "./_footer.scss";
-@import "./_mediaqueries.scss";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
 
-* {
-    margin: 0;
-    padding: 0;
-}
-/*************** FONDO DE TODO ****************/
+/******************* MEDIA QUERIES *******************/
+@media screen and (max-width: 768px) {
 
-body {
-    background-image: url("../img/066938f633a1394737d55392df4196e4.jpg")
+    .GrillaPlantas {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 400px 1fr 1fr 1fr;
+        grid-template-areas: 
+        "imagen imagen"
+        "texto texto"
+        "video1 video2"
+        "video3 video3"
     }
 
-/********************* NAV ***************************/
-
-.navbar.navbar-expand-lg.navbar-light {
-    height: 150px;
-    background-color: $navColor;
-    z-index: 300;
-}
-
-.navbar-light .navbar-brand {
-    color: $navParrafosColor;
-    font-size: 40px;
-    font-family: 'Josefin Sans', sans-serif;
-    margin-left: 15px;
-
-    &:hover {
-        color: $navParrafosColor;
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
     }
+
+    .GrillaExterior {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "tituloh"
+        "foto1"
+        "descripcion1"
+        "foto2"
+        "descripcion2"
+        "foto3"
+        "descripcion3"
+    }
+
+    .DescripcionExIn {
+        margin: 25px;
+        justify-content: center;
+        align-items: center;
+        transform: none;
 }
 
-#navbarNav ul {
-    margin-right: 25px;
+    .GrillaTienda {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "card1 card2"
+        "card3 card4" 
+        "card5 card6"
+    }
 
-    & li {
-        margin: 0 25px;
+    .estiloAnuncio {
+        align-items: center;
+        flex-direction: column;
 
-        & a {
-            color: $navParrafosColor;
-            font-family: 'Montserrat', sans-serif;
-
-            &:hover {
-                color: black;
-            }
+        & img {
+            width: 50%;
+            margin: 30px;
         }
     }
+
+    section h2 {
+        font-size: 1.37rem;
+        justify-content: center;
+        margin: 15px;
+    }
+
+    .Estilo-Formulario{
+        width: 50%;
+    }
+
+    .btn-success {
+        width: 60%
+    }
 }
 
-.navbar-collapse {
-    background-color: $navColor;
-    flex-grow: unset;
+@media screen and (max-width: 600px) {
+
+    .GrillaPlantas {
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "imagen"
+        "texto"
+        "video1" 
+        "video2"
+        "video3"
+    }
+
+    .GrillaTienda {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "card1"
+        "card2" 
+        "card3"
+        "card4" 
+        "card5"
+        "card6"
+    }
+
+    .Estilo-Formulario{
+        width: 100%;
+    }
+
+    .estiloAnuncio {
+        flex-direction: column;
+    }
 }
 
-.container-fluid {
-    padding: 0;
-}
-
-.navbar-toggler {
-    margin: 20px;
-}
-
-/************** GRILLA SECTION INICIO ***************/
-
-.GrillaPlantas {
-    display: grid;
-    grid-template-columns: 40% 20% 40%;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "imagen imagen texto"
-    "video1 video2 video3";
-    overflow: hidden;
-}
-
-.imagen{
-    grid-area: imagen;
-}
-
-.texto{
-    grid-area: texto;
-}
-
-.video1 {
-    grid-area: video1;
-}
-
-.video2 {
-    grid-area: video2;
-}
-
-.video3 {
-    grid-area: video3;
-}
-
-/********* GRILLA PLANTAS DE EXTERIOR y INTERIOR *********/
-
-.GrillaExterior {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "tituloh tituloh"
-    "foto1 descripcion1"
-    "descripcion2 foto2"
-    "foto3 descripcion3";
-    overflow: hidden;
-}
-
-.tituloh {
-    grid-area: tituloh;
-}
-
-.foto1 {
-    grid-area: foto1;
-}
-
-.descripcion1 {
-    grid-area: descripcion1;
-}
-
-.foto2 {
-    grid-area: foto2;
-}
-
-.descripcion2 {
-    grid-area: descripcion2;
-}
-
-.foto3 {
-    grid-area: foto3;
-}
-
-.descripcion3 {
-    grid-area: descripcion3;
-}
-
-/************GRILLA TIENDA**************/
-
-.GrillaTienda {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "card1 card2 card3"
-    "card4 card5 card6"
-}
-
-.card1 {
-    grid-area: card1;
-}
-
-.card2 {
-    grid-area: card2;
-}
-
-.card3 {
-    grid-area: card3;
-}
-
-.card4 {
-    grid-area: card4;
-}
-
-.card5 {
-    grid-area: card5;
-}
-
-.card6 {
-    grid-area: card6;
-}

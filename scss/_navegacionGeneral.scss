@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*************** FONDO DE TODO ****************/
+
+body {
+    background-image: url("../img/066938f633a1394737d55392df4196e4.jpg")
+    }
+
+/********************* NAV ***************************/
+
+.navbar.navbar-expand-lg.navbar-light {
+    height: 150px;
+    background-color: $navColor;
+    z-index: 300;
+}
+
+.navbar-light .navbar-brand {
+    color: $navParrafosColor;
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 15px;
+
+    &:hover {
+        color: $navParrafosColor;
+    }
+}
+
+#navbarNav ul {
+    margin-right: 25px;
+
+    & li {
+        margin: 0 25px;
+
+        & a {
+            color: $navParrafosColor;
+            font-family: 'Montserrat', sans-serif;
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
+
+.navbar-collapse {
+    background-color: $navColor;
+    flex-grow: unset;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.navbar-toggler {
+    margin: 20px;
+}

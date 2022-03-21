@@ -1,3 +1,76 @@
+/************** GRILLA SECTION INICIO ***************/
+
+.GrillaPlantas {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "imagen imagen texto"
+    "video1 video2 video3";
+    overflow: hidden;
+}
+
+.imagen{
+    grid-area: imagen;
+}
+
+.texto{
+    grid-area: texto;
+}
+
+.video1 {
+    grid-area: video1;
+}
+
+.video2 {
+    grid-area: video2;
+}
+
+.video3 {
+    grid-area: video3;
+}
+
+/********* GRILLA PLANTAS DE EXTERIOR y INTERIOR *********/
+
+.GrillaExterior {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "tituloh tituloh"
+    "foto1 descripcion1"
+    "descripcion2 foto2"
+    "foto3 descripcion3";
+    overflow: hidden;
+}
+
+.tituloh {
+    grid-area: tituloh;
+}
+
+.foto1 {
+    grid-area: foto1;
+}
+
+.descripcion1 {
+    grid-area: descripcion1;
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+
+.descripcion2 {
+    grid-area: descripcion2;
+}
+
+.foto3 {
+    grid-area: foto3;
+}
+
+.descripcion3 {
+    grid-area: descripcion3;
+}
+
 /**************** IMAGEN PLANTA INICIO ***************/
 .estiloImagen {
     display: flex;

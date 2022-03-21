@@ -29,14 +29,14 @@
     align-items: center;
 
     & .padding-Derecha {
-        padding: 37px;
-        font-family: $fontParrafos;
-        font-size: 0.94rem;
-    }
-
-    & .padding-Izquierda {
         padding-right: 37px;
         font-family: $fontParrafos;
         font-size: 0.94rem;
     }
 }
+
+.padding-Izquierda {
+    @extend .padding-Derecha;
+    padding-left: 37px;
+}
+
