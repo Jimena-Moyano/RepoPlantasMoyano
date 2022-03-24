@@ -70,7 +70,7 @@ body {
 .GrillaExterior {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "tituloh tituloh" "foto1 descripcion1" "descripcion2 foto2" "foto3 descripcion3";
+  grid-template-areas: "tituloh tituloh" "foto1 descripcion1" "descripcion2 foto2" "foto3 descripcion3" "descripcion4 foto4" "foto5 descripcion5" "descripcion6 foto6";
   overflow: hidden; }
 
 .tituloh {
@@ -94,6 +94,24 @@ body {
 .descripcion3 {
   grid-area: descripcion3; }
 
+.foto4 {
+  grid-area: foto4; }
+
+.descripcion4 {
+  grid-area: descripcion4; }
+
+.foto5 {
+  grid-area: foto5; }
+
+.descripcion5 {
+  grid-area: descripcion5; }
+
+.foto6 {
+  grid-area: foto6; }
+
+.descripcion6 {
+  grid-area: descripcion6; }
+
 /**************** IMAGEN PLANTA INICIO ***************/
 .estiloImagen {
   display: flex; }
@@ -107,7 +125,7 @@ body {
   text-align: center;
   background-color: #fff9ed;
   filter: brightness(85%); }
-  .estiloTexto h2 {
+  .estiloTexto h1 {
     font-size: 1.25rem;
     padding: 50px;
     transform: translate(-10px);
@@ -323,7 +341,7 @@ footer {
     height: 300px; }
   .GrillaExterior {
     grid-template-columns: 100%;
-    grid-template-areas: "tituloh" "foto1" "descripcion1" "foto2" "descripcion2" "foto3" "descripcion3"; }
+    grid-template-areas: "tituloh" "foto1" "descripcion1" "foto2" "descripcion2" "foto3" "descripcion3" "foto4" "descripcion4" "foto5" "descripcion5" "foto6" "descripcion6"; }
   .DescripcionExIn {
     margin: 25px;
     justify-content: center;
@@ -359,4 +377,10 @@ footer {
   .Estilo-Formulario {
     width: 100%; }
   .estiloAnuncio {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .TituloPlantaInterior {
+    text-align: center; }
+  .ContenedorForm .Estilo-Formulario {
+    width: 80%; }
+  .form-check-label {
+    font-size: 12px; } }

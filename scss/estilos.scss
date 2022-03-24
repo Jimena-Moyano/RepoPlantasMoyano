@@ -39,6 +39,12 @@
         "descripcion2"
         "foto3"
         "descripcion3"
+        "foto4"
+        "descripcion4"
+        "foto5"
+        "descripcion5"
+        "foto6"
+        "descripcion6"
     }
 
     .DescripcionExIn {
@@ -112,6 +118,18 @@
 
     .estiloAnuncio {
         flex-direction: column;
+    }
+
+    .TituloPlantaInterior {
+        text-align: center;
+    }
+
+    .ContenedorForm .Estilo-Formulario {
+        width: 80%;
+    }
+
+    .form-check-label {
+        font-size: 12px;
     }
 }
 

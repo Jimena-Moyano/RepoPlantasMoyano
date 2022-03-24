@@ -39,7 +39,10 @@
     "tituloh tituloh"
     "foto1 descripcion1"
     "descripcion2 foto2"
-    "foto3 descripcion3";
+    "foto3 descripcion3"
+    "descripcion4 foto4"
+    "foto5 descripcion5"
+    "descripcion6 foto6";
     overflow: hidden;
 }
 
@@ -71,6 +74,30 @@
     grid-area: descripcion3;
 }
 
+.foto4 {
+    grid-area: foto4;
+}
+
+.descripcion4 {
+    grid-area: descripcion4;
+}
+
+.foto5 {
+    grid-area: foto5;
+}
+
+.descripcion5 {
+    grid-area: descripcion5;
+}
+
+.foto6 {
+    grid-area: foto6;
+}
+
+.descripcion6 {
+    grid-area: descripcion6;
+}
+
 /**************** IMAGEN PLANTA INICIO ***************/
 .estiloImagen {
     display: flex;
@@ -88,7 +115,7 @@
     background-color: #fff9ed;
     filter: brightness(85%);   
 
-    & h2 {
+    & h1 {
         font-size: 1.25rem;
         padding: 50px;
         transform: translate(-10px);
