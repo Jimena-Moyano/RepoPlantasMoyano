@@ -16,11 +16,12 @@ section h1 {
    & .Estilo-Formulario {
     display: flex;
     flex-direction: column;
-    background-color:  rgba(102, 83, 83, 0.205);
+    background-image: linear-gradient(to right, #a5818134, #975d8734, #75678634, #7f559b34, #6d333334);
     border-radius: 20px;
     padding: 40px;
     width: 50%;
     height: 50%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
     }
 }
 

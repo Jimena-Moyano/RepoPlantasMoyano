@@ -158,7 +158,6 @@ iframe {
   font-size: 1.12rem;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
   font-weight: 600; }
   .TextoDeIframe:hover {
     transform: scale(1.1); }
@@ -193,6 +192,12 @@ iframe {
 
 .padding-Izquierda {
   padding-left: 37px; }
+
+.resalta__Plantas {
+  font-size: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #313131; }
 
 /************GRILLA TIENDA**************/
 .GrillaTienda {
@@ -264,11 +269,12 @@ section h1 {
   .ContenedorForm .Estilo-Formulario {
     display: flex;
     flex-direction: column;
-    background-color: rgba(102, 83, 83, 0.205);
+    background-image: linear-gradient(to right, #a5818134, #975d8734, #75678634, #7f559b34, #6d333334);
     border-radius: 20px;
     padding: 40px;
     width: 50%;
-    height: 50%; }
+    height: 50%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349); }
 
 .form-control {
   width: 90%;
@@ -383,4 +389,6 @@ footer {
   .ContenedorForm .Estilo-Formulario {
     width: 80%; }
   .form-check-label {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .form-check {
+    padding-left: 0; } }
